@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>الطبيعة</title>
+</head>
+<body dir="rtl">
+<header>
+    <!-- //////////////navbar///////////////// -->
+    <nav class="navbar navbar-expand-lg  bg-success fixed-top" >
+        <div class="container-fluid ">
+          <img  src="images/logo3.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize fs-5  " >
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#fruits">الفواكه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#vegetables">الخضار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#papers">الورقيات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">EN</a>
+              </li>
+            </ul>
+            <form class="d-flex my-2  py-2 align-items-center">
+              <a href="#demo" class="fs-5 px-3" data-bs-toggle="offcanvas" data-bs-target="#demo" ><i class="fa-solid fa-user" style="color: #07f326;"></i></a>
+              <a href="#" class="fs-5 px-3" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-magnifying-glass" style="color: #07f326;"></i></a>
+              <a href="#purchases.html" class="fs-5 px-3"><i class="fa-solid fa-cart-shopping" style="color: #07f326;" ></i></a>
+              <div class="fs-6 text-center " id="num-product"><a href="#purchases.html" id="num" >0</a></div> 
+              <div class="fs-4 px-2 text-light px-3 " id="total"></div> 
+            </form>
+          </div>
+        </div>
+    </nav>
+        <!-- ////////////search/////////// -->
+        <div class="modal mt-5 " id="myModal">      
+            <div class="modal-dialog  pt-5 ">
+                <div>                     
+                    <button type="button" class="btn-close bg-light fs-5 " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-content mt-5 ">     
+                
+                    <div class="modal-body  p-0 d-flex justify-content-evenly">
+                        <input type="search" name="" id="" placeholder="بحث..." class="search w-100 py-3  ">
+                        <button type="button" class="btn btn-success    " data-bs-dismiss="modal">ابحث</button>          
+                    </div>        
+                </div>
+            </div>
+        </div>
+           <!-- ///////////////////////////// -->
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header d-block bg-success text-light">
+           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+           <h2 class="offcanvas-title text-center">تسجيل الدخول</h2>
+           <p class="text-center">تسجيل الدخول باستخدام رقم هاتفك المحمول</p>         
+        </div>
+        <div class="offcanvas-body text-center">
+          <p class="fw-bold">رقم الهاتف</p>       
+          <input type="tel" class=" w-100 bg-light " >
+          <button class="btn btn-success w-100 mt-4" type="button">دخول</button>
+        </div>
+      </div>
+      
+      <!-- <div class="container-fluid mt-3">
+        <h3>Offcanvas Sidebar</h3>
+        <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+
+      </div> -->
+    <!-- //////////////main///////////////// -->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="bg-success"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/main4.jpg" class="d-block w-100 vh-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                  <h5 class="text-success ">من قلب الطبيعة</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/main6.jpg" class="d-block w-100 vh-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>من مزارع إلى مستهلك</h5>
+                </div>
+              </div>
+           
+            </div>
+          
+        </div>
+    </main>
+</header>
+<!-- ////////////////section-1///////// -->
+ <section class="sec-fruits bg-success bg-opacity-10 " id="fruits" >
+    <div class="container text-center py-5 ">
+        <h2 class="sec-fruits title text-uppercase fw-bold">الفواكه</h2>
+        <div class="sec-fruits line bg-warning m-auto" style="width: 100px; height: 3px;"></div>
+        <div class="row  py-5 ">
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;">
+                    <img src="images/banana.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4  text-capitalize  " price="7">الموز</h3>
+                        <p class=" card-text fs-4 opacity-50"  >7 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/Red-Apple.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="5">التفاح الأحمر</h3>
+                        <p class="card-text fs-4 opacity-50" >5 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/grapes.jpg" class="card-img-top  p-4 h-100 " alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="6">العنب</h3>
+                        <p class="card-text fs-4 opacity-50" >6 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/orange.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="4">البرتقال</h3>
+                        <p class="card-text fs-4 opacity-50" >4 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/Strawberry.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="10">الفريز</h3>
+                        <p class="card-text fs-4 opacity-50" >10 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/Mango1.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="12">المانجا</h3>
+                        <p class="card-text fs-4 opacity-50" >12 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;">
+                    <img src="images/Green-apple.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="4">التفاح الأخضر</h3>
+                        <p class="card-text fs-4 opacity-50" >4 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3  py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;">
+                    <img src="images/pineapple.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="15">الأناناس</h3>
+                        <p class="card-text fs-4 opacity-50" >15 $</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ </section>   
+<!-- ///////////////vegetable////////////// -->
+<section class="sec-vegetable  " id="vegetables">
+    <div class="container text-center py-5 ">
+        <h2 class="sec-vegetable title text-uppercase fw-bold">الخضار</h2>
+        <div class="sec-vegetable line bg-warning m-auto" style="width: 170px; height: 3px;"></div>
+        <div class="row  py-5 ">
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem; height: 100%;">
+                    <img src="images/tomatoes.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4  text-capitalize " price="5">بندورة</h3>
+                        <p class=" card-text fs-4 opacity-50 " >5 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/option.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="4">خيار</h3>
+                        <p class="card-text fs-4 opacity-50" >4 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/Lemon.jpg" class="card-img-top  p-4 h-100 " alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="6">ليمون</h3>
+                        <p class="card-text fs-4 opacity-50" >6 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/potato.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="4">بطاطا</h3>
+                        <p class="card-text fs-4 opacity-50" >4 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/Red pepper.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="8">فليفلة حمراء</h3>
+                        <p class="card-text fs-4 opacity-50" >8 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/carrot.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="9">جزر</h3>
+                        <p class="card-text fs-4 opacity-50" >9 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/eggplant.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="4">باذنجان</h3>
+                        <p class="card-text fs-4 opacity-50" >4 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3  py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem; ">
+                    <img src="images/zucchini.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="5">كوسا</h3>
+                        <p class="card-text fs-4 opacity-50" >5 $</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ </section>  
+<!-- ////////////////////papers//////////////////// -->
+<section class="sec-papers  bg-success bg-opacity-10 " id="papers" >
+    <div class="container text-center py-5 " >
+        <h2 class="sec-papers title text-uppercase fw-bold">الورقيات</h2>
+        <div class="sec-papers line bg-warning m-auto" style="width: 100px; height: 3px;"></div>
+        <div class="row  py-5 ">
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem; height: 100%;">
+                    <img src="images/watercress.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4  text-capitalize " price="2">جرجير</h3>
+                        <p class="card-text fs-4 opacity-50" >2 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/lettuce.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="1">خس</h3>
+                        <p class="card-text fs-4 opacity-50" >1 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/radish.jpg" class="card-img-top  p-4 h-100 " alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="1">فجل</h3>
+                        <p class="card-text fs-4 opacity-50" >1 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/parsley.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="2">بقدونس</h3>
+                        <p class="card-text fs-4 opacity-50" >2 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 py-3 ">
+                <div class="card shadow-lg m-auto" style="width: 16rem;height: 100%;">
+                    <img src="images/mint.jpg" class="card-img-top  p-4 h-100" alt="">
+                    <div class="card-body opacity-75">
+                        <h3 class="btn btn-success px-4 text-capitalize " price="1">نعنع</h3>
+                        <p class="card-text fs-4 opacity-50" >1 $</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+ </section>
+<!-- ////////////////app/////////////// -->
+<section class="app py-5">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+                <h3>قم بتنزيل التطبيق الآن</h3>
+                   <p> يمكنك تنزيل التطبيق عبر App Store و Google Play وتنزيل التطبيق والاستمتاع بتجربة تسوق فريدة</p>
+
+            </div>
+            <div class="col-md-6  text-center ">
+                <button class="btn btn-dark text-light px-4 py-2 m-3"><i class="fa-brands fa-google-play" style="color: #f4f6f4;"></i>  Google play</button>
+                <button class="btn  btn-dark text-light px-4 py-2"><i class="fa-brands fa-apple fs-4" style="color: #f9fafb;"></i>  App Store</button>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //////////////////////////////// -->
+<footer class="footer bg-success ">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-4  py-5 text-center">
+                <img  src="images/logo3.png" alt="">
+                <p class="pt-3">يوفر لك أفضل أنواع الخضار والفواكه الطازجة بأفضل الأسعار. نحن نضمن تزويدك بمنتجات عالية الجودة.
+                </p>
+            </div>
+            <div class="col-md-4  py-5 text-center  my-auto">
+                <h4 class="text-light pb-3">اتصل بنا</h4>
+                <a href="#" class="px-4 fs-2 "><i class="fa-brands fa-square-facebook" style="color: #07f326;"></i></a>
+                <a href="#" class="px-4 fs-2"><i class="fa-solid fa-square-phone" style="color: #07f326;"></i></a>
+                <a href="#" class="px-4 fs-2"><i class="fa-brands fa-square-whatsapp" style="color: #07f326;"></i></a>
+                <a href="#" class="px-4 fs-2"><i class="fa-brands fa-square-snapchat" style="color: #07f326;"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="fs-1 ms-4 fixed-bottom " style="width: 40px;"><i class="fa-solid fa-circle-up" style="color: #07f326;"></i></a>
+        
+</footer>
+
+
+
+
+
+
+
+    <script src="js/all.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
